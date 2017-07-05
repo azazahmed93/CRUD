@@ -1,0 +1,9 @@
+<h1>My Blog List</h1>
+
+	<% @blogs.each do |b| %>
+	<h2><%=b.title%></h2>
+	<div><%=truncate(b.content, :length => 70)%></div>
+	<%= link_to "Read post", b%>
+	
+	<% end %>
+	
